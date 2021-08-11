@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+
+.crypto-card {
+  border: 1px solid black;
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

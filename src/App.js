@@ -1,4 +1,5 @@
 import './App.css';
+import CryptoCard from './components/CryptoCard';
 
 function App() {
   return (
