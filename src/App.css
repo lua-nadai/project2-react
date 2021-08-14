@@ -39,9 +39,18 @@
 
 
 .crypto-card {
-  border: 1px solid black;
-  width: 300px;
+  border: 1px solid rgb(90, 89, 89);
+  width: 500px;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin: 5px
+}
+
+.list-group{
+    max-height: 600px;
+    max-width: 550px;
+    margin-bottom: 0;
+    overflow:scroll;
+    -webkit-overflow-scrolling: touch;
 }
