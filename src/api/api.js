@@ -12,6 +12,9 @@ class ApiCrypto {
         return this.API.get(`/coins/markets?vs_currency=${currency}`)
     }
 
+    listCryptoHeader(crypto) {
+        return this.API.get(`/coins/markets?vs_currency=usd&ids=${crypto}`)
+    }
 
 
 }
