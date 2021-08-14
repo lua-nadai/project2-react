@@ -46,27 +46,4 @@ class CryptoHeader extends Component {
 
 }
 
-
-
-
-
-// const CryptoHeader = (props) => {
-
-//     let {id} = useParams() 
-//     const cryptoId = props.match.params.id;
-
-//     ApiCrypto.listCrypto
-
-//     let crypto = props.cryptos.getAttribute(cryptoId)
-
-//         return (
-//             <div>
-//                 <h1>{id}</h1>
-//                 {console.log(crypto)}
-//                 {console.log(cryptoId)}
-//             </div>
-//         )
-
-// }
-
 export default CryptoHeader
