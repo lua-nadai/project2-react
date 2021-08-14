@@ -1,16 +1,12 @@
 import React, { Component } from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 
 import './App.css';
 
-import CryptoCard from './components/CryptoCard';
 import ApiCrypto from './api/api.js'
+import MarketRouter from "./components/MarketRouter";
 import CryptoList from "./components/CryptoList";
+
 
 
 class App extends Component {
@@ -35,7 +31,11 @@ class App extends Component {
         </div>
 
       <Switch>
-          <Route path="/market-crypto" render={(props) => <CryptoList {...props} cryptos={this.state.cryptoList}/>}/>
+          <Route 
+            path='/market-crypto' 
+            render={(props) => <MarketRouter {...props} cryptos={this.state.cryptoList}/>} 
+          />
+
       </Switch>
 
       </>
