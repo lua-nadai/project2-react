@@ -36,37 +36,17 @@ class CryptoHeader extends Component {
     render() {
         
         return (
-            <div>
+            <div className='crypto-header'>
                 <h1>{this.state.crypto.name}</h1>
-                {/* {console.log(this.state.cryptoList[0].name)} */}
-
+                <h2>{this.state.crypto.symbol}</h2>
+                <h3>Current Price:<br/>{this.state.crypto.current_price}</h3>
+                <h3>Market Change 24h:<br/>{this.state.crypto.market_cap_change_percentage_24h}</h3>
+                <h3>High 24h:<br/>{this.state.crypto.high_24h}</h3>
+                <h3>Low 24h:<br />{this.state.crypto.low_24h}</h3>
             </div>
         )
     }
 
 }
-
-
-
-
-
-// const CryptoHeader = (props) => {
-
-//     let {id} = useParams() 
-//     const cryptoId = props.match.params.id;
-
-//     ApiCrypto.listCrypto
-
-//     let crypto = props.cryptos.getAttribute(cryptoId)
-
-//         return (
-//             <div>
-//                 <h1>{id}</h1>
-//                 {console.log(crypto)}
-//                 {console.log(cryptoId)}
-//             </div>
-//         )
-
-// }
 
 export default CryptoHeader

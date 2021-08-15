@@ -55,3 +55,9 @@
     overflow:scroll;
     -webkit-overflow-scrolling: touch;
 }
+
+.crypto-header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
