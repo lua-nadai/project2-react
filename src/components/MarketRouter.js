@@ -8,15 +8,17 @@ import CryptoList from './CryptoList';
 const MarketRouter = (props) => {
     return (
         <>
-            <CryptoList {...props} />
+            <div className='market-crypto'>
+                <CryptoList {...props} />
 
-            <Switch>
-                <Route 
-                    path = {`${props.match.path}/:id`} 
-                    render = {(props)=><CryptoHeader {...props}/>}
-                    
-                />
-            </Switch>
+                <Switch>
+                    <Route 
+                        path = {`${props.match.path}/:id`} 
+                        render = {(props)=><CryptoHeader {...props}/>}
+                        
+                    />
+                </Switch>
+            </div>
             
         </>
     )
